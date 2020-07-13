@@ -1,0 +1,23 @@
+name: Publication
+
+on: push
+
+jobs:
+  upload-to-server:
+    name: Téléversement sur le serveur
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
+      - run: yarn
+      - run: yarn build
+      - name: Téléversement sur le serveur
+        uses: burnett01/rsync-deployments@4.0
+        with:
+          switches: -avz --delete --exclude={'src','.github','config','__sapper__/export'}
+          path: '.'
+          remote_path: /var/www/smartineau.me/index/
+          remote_host: smartineau.me
+          remote_user: samuel_martineau
+          remote_port: 2222
+          remote_key: ${{ secrets.DEPLOY_KEY }}
