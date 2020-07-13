@@ -11,6 +11,7 @@ jobs:
       - uses: actions/checkout@v2
       - run: yarn
       - run: yarn build
+      - run: ls __sapper__
       - name: Téléversement sur le serveur
         uses: burnett01/rsync-deployments@4.0
         with:
