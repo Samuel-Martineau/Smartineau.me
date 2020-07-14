@@ -1,0 +1,4 @@
+apps:
+  - script: './__sapper__/build/index.js'
+    name: 'Smartineau.me'
+    watch: true
