@@ -75,6 +75,6 @@
     </div>
   {/each}
   <div class="box">
-    <a href="https://github.com/Samuel-Martineau/repositories">Voir tous mes projets</a>
+    <a href="https://github.com/Samuel-Martineau?tab=repositories">Voir tous mes projets</a>
   </div>
 </div>
