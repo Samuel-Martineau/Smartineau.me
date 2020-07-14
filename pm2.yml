@@ -2,3 +2,4 @@ apps:
   - script: './__sapper__/build/index.js'
     name: 'Smartineau.me'
     watch: true
+    cwd: '/var/www/smartineau.me/index/'
