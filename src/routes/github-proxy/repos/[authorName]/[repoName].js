@@ -15,5 +15,4 @@ export async function get({ params: { authorName, repoName } }, res) {
     };
 
   res.status(200).send(reposCache[fullRepoName].data);
-  // res.status(200).send(JSON.stringify({}));
 }

@@ -9,5 +9,4 @@ export async function get(req, res) {
     lastRefresh: Date.now();
   }
   return res.status(200).send(data);
-  // res.status(200).send(JSON.stringify({}));
 }
