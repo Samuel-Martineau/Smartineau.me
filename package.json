@@ -4,14 +4,15 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
-    "build": "sapper build --legacy",
+    "build": "sapper build --legacy --port 2903",
     "export": "sapper export --legacy",
     "prestart": "npm run build",
-    "start": "PORT=2903 node __sapper__/build"
+    "start": "node __sapper__/build"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.13.1",
     "@fortawesome/free-regular-svg-icons": "^5.13.1",
+    "colors": "^1.4.0",
     "compression": "^1.7.1",
     "express": "^4.17.1",
     "node-fetch": "^2.6.0",
