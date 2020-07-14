@@ -14,7 +14,7 @@ jobs:
       - name: Téléversement sur le serveur
         uses: burnett01/rsync-deployments@4.0
         with:
-          switches: -avz --delete --include "__sapper__/***" --include "node_modules/***" --include "static/***" --exclude="*"
+          switches: -avz --delete --include "__sapper__/***" --include "node_modules/***" --include "static/***" --include "pm2.yml" --exclude="*"
           path: '.'
           remote_path: /var/www/smartineau.me/index/
           remote_host: smartineau.me
