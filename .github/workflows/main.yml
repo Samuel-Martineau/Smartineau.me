@@ -7,14 +7,14 @@ jobs:
     name: Construction de l'image Docker
     runs-on: ubuntu-latest
     steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
       - name: Get version
         id: version
         uses: notiz-dev/github-action-json-property@release
         with:
           path: package.json
           prop_path: version
-      - name: Check out the repo
-        uses: actions/checkout@v2
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
