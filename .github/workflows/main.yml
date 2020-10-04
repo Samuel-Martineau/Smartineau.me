@@ -18,7 +18,7 @@ jobs:
       - name: Docker Login - DockerHub
         run: docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_PASSWORD }}
       - name: Docker Login - Github Container Registry
-        run: docker login -u ${{ github.repository_owner }} -p ${{ secrets.GH_CR_PAT }} ghrc.io
+        run: docker login -u ${{ github.repository_owner }} -p ${{ secrets.GH_CR_PAT }} ghcr.io
       - name: Docker Build
         run: docker build -t personal-website
       - name: Tags
