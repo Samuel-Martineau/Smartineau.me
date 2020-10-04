@@ -1,5 +1,7 @@
 FROM node:14
 
+LABEL org.opencontainers.image.source https://github.com/Samuel-Martineau/Smartineau.me
+
 WORKDIR /app
 
 COPY package.json ./
