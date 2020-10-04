@@ -8,4 +8,4 @@
 
 ## Captures d'écran
 
-![desktop](https://raw.githubusercontent.com/Samuel-Martineau/Smartineau.me/master/screenshots/desktop.png) ![phone](https://raw.githubusercontent.com/Samuel-Martineau/Smartineau.me/master/screenshots/phone.png)
+![desktop](https://raw.githubusercontent.com/Samuel-Martineau/Smartineau.me/main/screenshots/desktop.png) ![phone](https://raw.githubusercontent.com/Samuel-Martineau/Smartineau.me/main/screenshots/phone.png)
