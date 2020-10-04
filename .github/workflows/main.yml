@@ -54,5 +54,5 @@ jobs:
           tags: |
             samuelmartineau/personal-website:latest
             samuelmartineau/personal-website:${{ steps.version.outputs.prop }}
-            ghcr.io/Samuel-Martineau/personal-website:latest
-            ghcr.io/Samuel-Martineau/personal-website:${{ steps.version.outputs.prop }}
+            ghcr.io/samuel-martineau/personal-website:latest
+            ghcr.io/samuel-martineau/personal-website:${{ steps.version.outputs.prop }}
