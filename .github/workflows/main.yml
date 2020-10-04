@@ -20,7 +20,7 @@ jobs:
       - name: Docker Login - Github Container Registry
         run: docker login -u ${{ github.repository_owner }} -p ${{ secrets.GH_CR_PAT }} ghcr.io
       - name: Docker Build
-        run: docker build -t personal-website
+        run: docker build -t personal-website .
       - name: Tags
         run: |
           docker tag personal-website ${{ secrets.DOCKERHUB_USERNAME }}/personal-website:latest
