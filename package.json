@@ -1,7 +1,7 @@
 {
   "name": "smartineau.me-beta",
   "private": true,
-  "version": "0.0.3",
+  "version": "1.0.0",
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build --legacy --port 2903",
