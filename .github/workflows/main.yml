@@ -44,4 +44,8 @@ jobs:
           docker tag personal-website ghcr.io/samuel-martineau/personal-website:latest
           docker tag personal-website ghcr.io/samuel-martineau/personal-website:${{ steps.version.outputs.prop }}
       - name: Push
-        run: docker push personal-website
+        run: |
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/personal-website:latest
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/personal-website:${{ steps.version.outputs.prop }}
+          docker push ghcr.io/samuel-martineau/personal-website:latest
+          docker push ghcr.io/samuel-martineau/personal-website:${{ steps.version.outputs.prop }}
