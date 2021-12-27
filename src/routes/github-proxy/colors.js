@@ -8,7 +8,7 @@ export async function get(req, res) {
     data = await fetchJSON(
       'https://raw.githubusercontent.com/ozh/github-colors/master/colors.json'
     );
-    lastRefresh: Date.now();
+    lastRefresh = Date.now();
   }
   return res.status(200).send(data);
 }
