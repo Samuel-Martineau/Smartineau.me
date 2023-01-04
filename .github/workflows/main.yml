@@ -12,10 +12,13 @@ jobs:
           node-version: 18
       - run: npm ci
       - run: npm run build
+      - run: ls
+      - run: ls dist
       - run: |
           tar \
             -cvf "$RUNNER_TEMP/artifact.tar"
-            ./dist/
+            --directory "./dist/"
+            .
       - name: Upload artifact
         uses: actions/upload-pages-artifact@main
         with:
