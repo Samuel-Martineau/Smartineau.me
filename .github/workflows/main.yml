@@ -12,11 +12,7 @@ jobs:
           node-version: 18
       - run: npm ci
       - run: npm run build
-      - run: |
-          tar \
-            -zcvf "${{ runner.temp }}/artifact.tar.gz"
-            --directory "./dist/"
-            .
+      - run: tar -zcvf "${{ runner.temp }}/artifact.tar.gz" --directory "./dist/" .
       - name: Upload artifact
         uses: actions/upload-pages-artifact@main
         with:
