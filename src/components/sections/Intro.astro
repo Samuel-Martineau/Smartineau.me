@@ -1,0 +1,133 @@
+---
+import { Content } from "../../../content/intro.md";
+---
+
+<section>
+  <div class="content">
+    <div class="flex">
+      <h1>Samuel<br />Martineau</h1>
+      <div class="body">
+        <Content />
+      </div>
+      <div class="links">
+        <a href="mailto:samumartineau@gmail.com">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+        <a href="https://github.com/Samuel-Martineau">
+          <i class="fa-brands fa-github-alt"></i>
+        </a>
+        <a href="https://www.npmjs.com/~samuel_martineau">
+          <i class="fa-brands fa-npm"></i>
+        </a>
+        <!-- <i class="fa-solid fa-key"></i> -->
+      </div>
+    </div>
+  </div>
+  <div class="wave"></div>
+  <div class="spacer"></div>
+</section>
+
+<svg class="clipPathParent" xmlns="http://www.w3.org/2000/svg">
+  <clipPath id="waveClipPath" clipPathUnits="objectBoundingBox">
+    <path
+      d="M0,.7613266425l.0416870117,.0688445378c.0416259766,.0688445378,.125,.2065336134,.2083129883,.1606617199s.1666870117-.2753781512,.25-.504884409S.6666870117,.0270093709,.75,.0040367266s.1666870117,.1606617199,.2083129883,.252405507l.0416870117,.0918171821v-.3482594157H0V.7613266425Z"
+    ></path>
+  </clipPath>
+</svg>
+
+<style lang="scss">
+  @import "../../styles/utils.scss";
+
+  section {
+    --wave-height: min(calc(100vw * 261 / 1280), 135px);
+    --spacer-height: max(5vh, 25px);
+    height: calc(var(--vh, 1vh) * 100);
+    scroll-snap-align: start;
+    animation: hueRotate 5s infinite alternate ease-in-out;
+  }
+
+  .content,
+  .wave {
+    background: linear-gradient(30deg, #2ecc71, #3498db, #2980b9);
+    background-attachment: fixed;
+    @include mobileDevice {
+      background-attachment: initial;
+    }
+  }
+
+  .content {
+    --fade-height: 0px;
+
+    @include mobileDevice {
+      height: calc(var(--vh, 1vh) * 100);
+      &::after {
+        height: var(--fade-height);
+        display: block;
+        content: "";
+        background-image: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 1)
+        );
+        width: 100%;
+      }
+    }
+
+    .flex {
+      height: calc(
+        var(--vh, 1vh) * 100 - var(--wave-height) - var(--spacer-height)
+      );
+      @include mobileDevice {
+        height: calc(var(--vh, 1vh) * 100 - var(--fade-height));
+      }
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      color: white;
+
+      .body {
+        width: 90vw;
+        max-width: min(1000px, 80vw);
+        text-align: center;
+        margin: 25px auto;
+      }
+
+      .links {
+        font-size: 48px;
+        a {
+          display: inline-block;
+          text-decoration: none;
+          color: white;
+          transition: transform 100ms ease-in-out;
+
+          &:visited {
+            color: white;
+          }
+
+          &:hover {
+            transform: scale(110%);
+          }
+
+          &:active {
+            transform: scale(90%);
+          }
+        }
+      }
+    }
+  }
+
+  .wave {
+    height: var(--wave-height);
+    clip-path: url(#waveClipPath);
+    @include mobileDevice {
+      height: 0px;
+    }
+  }
+
+  .spacer {
+    height: var(--spacer-height);
+  }
+</style>

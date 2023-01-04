@@ -1,0 +1,24 @@
+---
+import Footer from "../components/sections/Footer.astro";
+import Intro from "../components/sections/Intro.astro";
+import Projects from "../components/sections/Projects.astro";
+import Works from "../components/sections/Works.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <main>
+    <Intro />
+    <Projects />
+    <Works />
+    <Footer />
+  </main>
+</Layout>
+
+<style lang="scss">
+  main {
+    height: calc(var(--vh, 1vh) * 100);
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+</style>

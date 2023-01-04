@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Complexity and Clarity in Explanations",
+    "description": "An IBDP Theory of Knowledge exhibition on the relationship between complexity and clarity in explanations.",
+    "image": "/images/complexity-and-clarity-in-explanations.png",
+    "link": "/documents/complexity-and-clarity-in-explanations.pdf"
+  },
+  {
+    "name": "Reactions to New Knowledge in Science and Religion (Draft)",
+    "description": "An IBDP Theory of Knowledge exhibition on the relationship between complexity and clarity in explanations.",
+    "image": "/images/reactions-to-new-knowledge-in-science-and-religion.png",
+    "link": "/documents/reactions-to-new-knowledge-in-science-and-religion.pdf"
+  },
+  {
+    "name": "Using Bayesian Analysis to Predict Election Results (Draft)",
+    "description": "An IBDP mathematics IA on the use of conditional probability in election predictions.",
+    "image": "/images/using-bayesian-analysis-to-predict-election-results.png",
+    "link": "/documents/using-bayesian-analysis-to-predict-election-results.pdf"
+  }
+]

@@ -1,0 +1,51 @@
+<section>
+  <div>
+    <p><b>Samuel Martineau</b></p>
+    <p class="small">
+      Moteur de site: <a href="https://astro.build/">Astro</a>
+    </p>
+    <p class="small">
+      Police d'écriture: <a href="https://cm-unicode.sourceforge.io/"
+        >Computer Modern</a
+      >
+    </p>
+    <p class="small">
+      Icônes: <a href="https://fontawesome.com/">FontAwesome</a>
+    </p>
+  </div>
+
+  <style lang="scss">
+    @import "../../styles/utils.scss";
+
+    section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: linear-gradient(30deg, #3498db, #8e44ad);
+      animation: hueRotate 5s infinite alternate ease-in-out;
+      scroll-snap-align: start;
+
+      @include mobileDevice {
+        height: calc(var(--vh, 1vh) * 100);
+      }
+
+      padding: 20px 0;
+      font-family: "Computer Modern Bright";
+      text-align: center;
+      font-size: 18px;
+      color: white;
+    }
+
+    .small {
+      font-size: 14px;
+    }
+
+    a {
+      color: white;
+      *:visited {
+        color: white;
+      }
+    }
+  </style>
+</section>

@@ -1,0 +1,13 @@
+@mixin mobileDevice {
+  @media (pointer: none), (pointer: coarse) {
+    @media screen and (max-device-width: 600px) {
+      @content;
+    }
+  }
+}
+
+@mixin smallScreen {
+  @media screen and (max-width: 900px), screen and (max-height: 650px) {
+    @content;
+  }
+}

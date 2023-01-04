@@ -1,0 +1,41 @@
+---
+import works from "../../../content/featured-works.json";
+import Carousel from "../Carousel.astro";
+---
+
+<section>
+  <h1>Travaux</h1>
+  <div class="works">
+    <Carousel data={works} aspectRatio={8.5 / 11} />
+  </div>
+</section>
+
+<style lang="scss">
+  @import "../../styles/utils.scss";
+
+  section {
+    height: calc(var(--vh, 1vh) * 100);
+    scroll-snap-align: start;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    box-sizing: border-box;
+  }
+
+  h1 {
+    padding: 0 !important;
+    padding-bottom: 5px !important;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .works {
+    width: 100vw;
+  }
+</style>

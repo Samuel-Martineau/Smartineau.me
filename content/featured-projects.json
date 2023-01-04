@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Simulateur d'évolution",
+    "description": "Un projet d'Expo-Science qui a pour but de simuler l'évolution naturelle selon la théorie de Charles Darwin.",
+    "image": "/images/simulateur-evolution-darwin.png",
+    "link": "https://github.com/Samuel-Martineau/Simulateur-Evolution-Darwin"
+  },
+  {
+    "name": "Tetris 13kB Game",
+    "description": "A beautiful Tetris clone wich is smaller (once zipped) than 13 kB. Built with Dang Khoa Chiem.",
+    "image": "/images/tetris-13kb-game.png",
+    "link": "https://github.com/Samuel-Martineau/Tetris-13kB-Game"
+  },
+  {
+    "name": "MC-Config-Controller",
+    "description": "MC-Config-Controller is a tool to create Minecraft server networks easily. Built with Dang Khoa Chiem.",
+    "image": "/images/mc-config-controller.png",
+    "link": "https://github.com/Samuel-Martineau/MC-Config-Controller"
+  }
+]

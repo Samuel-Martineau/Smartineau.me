@@ -1,0 +1,101 @@
+---
+interface Props {
+  data: {
+    name: string;
+    description: string;
+    image: string;
+    link: string;
+  }[];
+  aspectRatio: number;
+}
+
+const { data, aspectRatio } = Astro.props;
+---
+
+<div class="list">
+  <div class="spacer"></div>
+  {
+    data.map((el) => (
+      <a href={el.link}>
+        <div class="image" style={`--bg-image: url('${el.image}')`} />
+        <p>
+          <b>{el.name}</b>
+        </p>
+        <p>{el.description}</p>
+      </a>
+    ))
+  }
+  <div class="spacer"></div>
+</div>
+
+<style lang="scss" define:vars={{ aspectRatio }}>
+  @import "../styles/utils.scss";
+
+  .list {
+    width: 100vw;
+    height: 100%;
+    overflow-x: auto;
+    display: flex;
+    gap: 100px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    @include smallScreen {
+      gap: 25px;
+    }
+  }
+
+  .spacer {
+    width: calc(50vw);
+    flex-shrink: 0;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+    &:visited {
+      color: black;
+    }
+    scroll-snap-align: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .image {
+      // width: min(calc(100vw - 100px), 90vw, calc(16 / 9 * 40vh));
+      // aspect-ratio: 16/9;
+      width: min(calc(100vw - 100px), 90vw, calc(var(--aspectRatio) * 45vh));
+      aspect-ratio: var(--aspectRatio);
+      background-image: var(--bg-image);
+      background-size: cover;
+      background-position: center;
+      border-radius: 25px;
+      border: 3px solid black;
+    }
+
+    p {
+      max-width: 50vw;
+    }
+  }
+</style>
+
+<script lang="ts" defer>
+  window.onload = () => {
+    const lists = document.querySelectorAll(".list");
+    lists.forEach((list) => {
+      list.scrollLeft = (list.scrollWidth - window.innerWidth) / 2;
+
+      const elements = Array.from(list.querySelectorAll("a"));
+      list.addEventListener("wheel", (e) => {
+        if (list.scrollLeft <= 100)
+          list.scrollLeft = elements[0].offsetLeft - elements[0].clientWidth;
+        else if (list.scrollWidth - list.scrollLeft - window.innerWidth <= 100)
+          list.scrollLeft =
+            elements[elements.length - 1].offsetLeft -
+            elements[elements.length - 1].clientWidth;
+      });
+    });
+  };
+</script>

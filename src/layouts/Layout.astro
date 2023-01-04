@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#2980b9" />
+    <title>Samuel Martineau</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global lang="scss">
+  @import "../styles/utils.scss";
+
+  @font-face {
+    font-family: "Computer Modern Serif";
+    src: url("/fonts/cm-unicode/CMUSerif-Roman.ttf");
+  }
+  @font-face {
+    font-family: "Computer Modern Serif";
+    src: url("/fonts/cm-unicode/CMUSerif-Italic.ttf");
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Computer Modern Serif";
+    src: url("/fonts/cm-unicode/CMUSerif-BoldNonExtended.ttf");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Computer Modern Serif";
+    src: url("/fonts/cm-unicode/CMUSerif-BoldItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Computer Modern Bright";
+    src: url("/fonts/cm-unicode/CMUBright-Roman.ttf");
+  }
+  @font-face {
+    font-family: "Computer Modern Bright";
+    src: url("/fonts/cm-unicode/CMUBright-Oblique.ttf");
+    font-style: oblique;
+  }
+  @font-face {
+    font-family: "Computer Modern Bright";
+    src: url("/fonts/cm-unicode/CMUBright-Bold.ttf");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Computer Modern Bright";
+    src: url("/fonts/cm-unicode/CMUBright-BoldOblique.ttf");
+    font-weight: bold;
+    font-style: oblique;
+  }
+
+  @keyframes hueRotate {
+    0% {
+      filter: hue-rotate(-30deg);
+    }
+    100% {
+      filter: hue-rotate(30deg);
+    }
+  }
+
+  :root {
+    --standard-padding: 25px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Computer Modern Serif";
+  }
+
+  a {
+    color: inherit;
+    &:visited {
+      color: inherit;
+    }
+  }
+
+  h1 {
+    font-size: 96px;
+    line-height: 76px;
+    padding: var(--standard-padding);
+    text-align: center;
+
+    @include smallScreen {
+      font-size: 64px;
+      line-height: 54px;
+    }
+  }
+
+  p {
+    font-size: 24px;
+    max-width: min(1000px, 80vw);
+
+    @include smallScreen {
+      font-size: 16px;
+    }
+  }
+
+  .clipPathParent {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+</style>
+
+<script lang="ts">
+  const updateVh = () =>
+    document.documentElement.style.setProperty(
+      "--vh",
+      `${window.innerHeight / 100}px`
+    );
+  window.addEventListener("resize", updateVh);
+  updateVh();
+</script>

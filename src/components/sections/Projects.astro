@@ -1,0 +1,52 @@
+---
+import projects from "../../../content/featured-projects.json";
+import Carousel from "../Carousel.astro";
+---
+
+<section>
+  <h1>Projets</h1>
+  <p>
+    <em
+      >Pour voir tous mes projets, rendez-vous sur ma page <a
+        href="https://github.com/Samuel-Martineau"
+      >
+        GitHub
+      </a>
+    </em>
+  </p>
+  <div class="projects">
+    <Carousel data={projects} aspectRatio={16 / 9} />
+  </div>
+</section>
+
+<style lang="scss">
+  @import "../../styles/utils.scss";
+
+  section {
+    height: calc(var(--vh, 1vh) * 100);
+    scroll-snap-align: start;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  h1 {
+    padding: 0 !important;
+    padding-bottom: 5px !important;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .title {
+    padding-bottom: var(--standard-padding);
+  }
+
+  .projects {
+    width: 100vw;
+  }
+</style>
