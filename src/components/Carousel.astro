@@ -5,6 +5,7 @@ interface Props {
     description: string;
     image: string;
     link: string;
+    bgSize?: string;
   }[];
   aspectRatio: number;
 }
@@ -17,7 +18,12 @@ const { data, aspectRatio } = Astro.props;
   {
     data.map((el) => (
       <a href={el.link}>
-        <div class="image" style={`--bg-image: url('${el.image}')`} />
+        <div
+          class="image"
+          style={`--bg-image: url('${el.image}'); --bg-size: ${
+            el.bgSize ?? "cover"
+          }`}
+        />
         <p>
           <b>{el.name}</b>
         </p>
@@ -69,7 +75,8 @@ const { data, aspectRatio } = Astro.props;
       width: min(calc(100vw - 100px), 90vw, calc(var(--aspectRatio) * 45vh));
       aspect-ratio: var(--aspectRatio);
       background-image: var(--bg-image);
-      background-size: cover;
+      background-size: var(--bg-size);
+      background-repeat: no-repeat;
       background-position: center;
       border-radius: 25px;
       border: 3px solid black;

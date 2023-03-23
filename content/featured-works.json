@@ -1,20 +1,32 @@
 [
   {
     "name": "Complexity and Clarity in Explanations",
-    "description": "An IBDP Theory of Knowledge exhibition on the relationship between complexity and clarity in explanations.",
+    "description": "An IB DP Theory of Knowledge exhibition on the relationship between complexity and clarity in explanations.",
     "image": "/images/complexity-and-clarity-in-explanations.png",
     "link": "/documents/complexity-and-clarity-in-explanations.pdf"
   },
   {
-    "name": "Reactions to New Knowledge in Science and Religion (Draft)",
+    "name": "Using Bayesian Analysis to Predict Election Results",
+    "description": "An IBDP mathematics IA on the use of conditional probability in election predictions.",
+    "image": "/images/using-bayesian-analysis-to-predict-election-results.png",
+    "link": "/documents/using-bayesian-analysis-to-predict-election-results.pdf"
+  },
+  {
+    "name": "Using Bayesian Analysis to Predict Election Results (Continuation, Draft)",
+    "description": "A much deeper continuation of my previous work on the use of conditional probability in election predictions.",
+    "image": "/images/using-bayesian-analysis-to-predict-election-results-continuation.png",
+    "link": "/documents/using-bayesian-analysis-to-predict-election-results-continuation.pdf"
+  },
+  {
+    "name": "Reactions to New Knowledge in Science and Religion",
     "description": "An IBDP Theory of Knowledge exhibition on the relationship between complexity and clarity in explanations.",
     "image": "/images/reactions-to-new-knowledge-in-science-and-religion.png",
     "link": "/documents/reactions-to-new-knowledge-in-science-and-religion.pdf"
   },
   {
-    "name": "Using Bayesian Analysis to Predict Election Results (Draft)",
-    "description": "An IBDP mathematics IA on the use of conditional probability in election predictions.",
-    "image": "/images/using-bayesian-analysis-to-predict-election-results.png",
-    "link": "/documents/using-bayesian-analysis-to-predict-election-results.pdf"
+    "name": "How can we distinguish between good and bad interpretations in the Natural Sciences?",
+    "description": "An IB DP Theory of Knowledge essay about interpretations in the Natural sciences.",
+    "image": "/images/distinguish-good-bad-interpretation-natural-sciences.png",
+    "link": "/documents/distinguish-good-bad-interpretation-natural-sciences.pdf"
   }
 ]

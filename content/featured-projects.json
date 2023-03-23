@@ -1,20 +1,45 @@
 [
   {
+    "name": "Tetris 13kB Game",
+    "description": "A beautiful Tetris clone wich is smaller (once zipped) than 13 kB. Built with Vu Dang Khoa Chiem.",
+    "image": "/images/tetris-13kb-game.png",
+    "link": "https://github.com/Samuel-Martineau/Tetris-13kB-Game"
+  },
+  {
     "name": "Simulateur d'évolution",
-    "description": "Un projet d'Expo-Science qui a pour but de simuler l'évolution naturelle selon la théorie de Charles Darwin.",
+    "description": "Un projet d'Expo-Sciences qui a pour but de simuler l'évolution naturelle selon la théorie de Charles Darwin. Fait avec Mélodie Zhou.",
     "image": "/images/simulateur-evolution-darwin.png",
     "link": "https://github.com/Samuel-Martineau/Simulateur-Evolution-Darwin"
   },
   {
-    "name": "Tetris 13kB Game",
-    "description": "A beautiful Tetris clone wich is smaller (once zipped) than 13 kB. Built with Dang Khoa Chiem.",
-    "image": "/images/tetris-13kb-game.png",
-    "link": "https://github.com/Samuel-Martineau/Tetris-13kB-Game"
+    "name": "Robot grimpeur",
+    "description": "Un projet d'Expo-Sciences sur l'invention d'un robot capable de grimper sur des murs de manière autonome. Fait avec Vu Dang Khoa Chiem.",
+    "image": "/images/robot-grimpeur.png",
+    "link": "https://github.com/Robot-Grimpeur"
+  },
+  {
+    "name": "MémoMath",
+    "description": "Un projet d'Expo-Sciences qui a pour but de démontrer l'efficacité de jeux vidéos éducationels. Fait avec Kylie Xu.",
+    "image": "/images/mémomath.png",
+    "link": "https://github.com/Samuel-Martineau/memomath"
   },
   {
     "name": "MC-Config-Controller",
     "description": "MC-Config-Controller is a tool to create Minecraft server networks easily. Built with Dang Khoa Chiem.",
     "image": "/images/mc-config-controller.png",
     "link": "https://github.com/Samuel-Martineau/MC-Config-Controller"
+  },
+  {
+    "name": "Generator-Svelte",
+    "description": "Generator-Svelte is a Yeoman generator generating a boilerplate Svelte.js app. Built with Vu Dang Khoa Chiem.",
+    "image": "/images/generator-svelte.gif",
+    "link": "https://github.com/Samuel-Martineau/generator-svelte",
+    "bgSize": "contain"
+  },
+  {
+    "name": "Chez Tomio",
+    "description": "Un site web transactionel construit pour un restaurant local. Fait avec Vu Dang Khoa Chiem.",
+    "image": "/images/chez-tomio.png",
+    "link": "https://cheztomio.com/"
   }
 ]
