@@ -1,5 +1,11 @@
 [
   {
+    "name": "Coding For You",
+    "description": "Un site web transactionel complet pour une possible compagnie de création de sites web. Conçu avec Vu Dang Khoa Chiem.",
+    "image": "/images/codingforyou.png",
+    "link": "https://github.com/CodingForYou-net"
+  },
+  {
     "name": "Tetris 13kB Game",
     "description": "A beautiful Tetris clone wich is smaller (once zipped) than 13 kB. Built with Vu Dang Khoa Chiem.",
     "image": "/images/tetris-13kb-game.png",
@@ -7,19 +13,19 @@
   },
   {
     "name": "Simulateur d'évolution",
-    "description": "Un projet d'Expo-Sciences qui a pour but de simuler l'évolution naturelle selon la théorie de Charles Darwin. Fait avec Mélodie Zhou.",
+    "description": "Un projet d'Expo-Sciences qui a pour but de simuler l'évolution naturelle selon la théorie de Charles Darwin. Conçu avec Mélodie Zhou.",
     "image": "/images/simulateur-evolution-darwin.png",
     "link": "https://github.com/Samuel-Martineau/Simulateur-Evolution-Darwin"
   },
   {
     "name": "Robot grimpeur",
-    "description": "Un projet d'Expo-Sciences sur l'invention d'un robot capable de grimper sur des murs de manière autonome. Fait avec Vu Dang Khoa Chiem.",
+    "description": "Un projet d'Expo-Sciences sur l'invention d'un robot capable de grimper sur des murs de manière autonome. Conçu avec Vu Dang Khoa Chiem.",
     "image": "/images/robot-grimpeur.png",
     "link": "https://github.com/Robot-Grimpeur"
   },
   {
     "name": "MémoMath",
-    "description": "Un projet d'Expo-Sciences qui a pour but de démontrer l'efficacité de jeux vidéos éducationels. Fait avec Kylie Xu.",
+    "description": "Un projet d'Expo-Sciences qui a pour but de démontrer l'efficacité de jeux vidéos éducationels. Conçu avec Kylie Xu.",
     "image": "/images/mémomath.png",
     "link": "https://github.com/Samuel-Martineau/memomath"
   },
@@ -38,7 +44,7 @@
   },
   {
     "name": "Chez Tomio",
-    "description": "Un site web transactionel construit pour un restaurant local. Fait avec Vu Dang Khoa Chiem.",
+    "description": "Un site web transactionel construit pour un restaurant local. Conçu avec Vu Dang Khoa Chiem.",
     "image": "/images/chez-tomio.png",
     "link": "https://cheztomio.com/"
   }
